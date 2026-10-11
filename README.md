@@ -39,3 +39,9 @@ Dane początkowe są demonstracyjne. Wynik symulacji nie oznacza zysku firmy. Ka
 ## Publikacja
 
 W Vercel lub Netlify: build `npm run build`, katalog `dist`. Aplikacja nie wymaga sekretów. Publikacja HTTPS wymaga skonfigurowania hostingu; lokalny serwer nie stanowi publikacji.
+
+## GitHub Pages
+
+Gotowy build jest na gałęzi `gh-pages`. W GitHub → Settings → Pages wybierz Source: Deploy from a branch, Branch: gh-pages, Folder: / (root), następnie Save. Docelowy adres po wdrożeniu: https://malwikamil-gif.github.io/public/ .
+
+Konfiguracja Vite używa względnych ścieżek zasobów. Aktualizacje kodu na `main` nie odświeżają automatycznie gałęzi `gh-pages`; przy kolejnej publikacji należy przesłać nowy build.
